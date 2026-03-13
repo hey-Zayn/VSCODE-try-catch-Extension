@@ -1,0 +1,30 @@
+{
+    "name": "warp-select-try-catch",
+    "displayName": "Wrap Selection in Try-Catch",
+    "description": "Wraps selected code in a try-catch block",
+    "version": "0.0.1",
+    "publisher": "your-publisher-name",
+    "scripts": {
+        "compile": "tsc -p ./"
+    },
+    "main": "./out/extension.js",
+    "engines": {
+        "vscode": "^1.87.0"
+    },
+    "activationEvents": [
+        "onCommand:wrapSelection.tryCatch"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "wrapSelection.tryCatch",
+                "title": "Wrap Selection in Try-Catch"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.87.0",
+        "@types/node": "^22.10.5",
+        "typescript": "^5.9.3"
+    }
+}
